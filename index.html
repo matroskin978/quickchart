@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickchart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+
+                <h3 class="text-center">Quickchart</h3>
+
+                <img src="https://quickchart.io/chart?width=500&height=300&chart={
+                        type: 'horizontalBar',
+                        data: {
+                            labels: ['Янв', 'Фев', 'Март', 'Апр', 'Май'],
+                            datasets: [
+                                {
+                                    label: 'Dogs',
+                                    data: [50, 60, 70, 180, 190],
+                                    fill: false,
+                                    backgroundColor: 'rgb(255, 99, 132)',
+                                    borderColor: 'rgb(255, 99, 50)',
+                                    borderWidth: 2,
+                                },
+                                {
+                                    label: 'Cats',
+                                    data: [100, 200, 300, 400, 500],
+                                    fill: false,
+                                    backgroundColor: 'rgb(54, 162, 235)',
+                                    borderColor: 'rgb(54, 162, 235)',
+                                }
+                            ]
+                        }
+                    }" />
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
